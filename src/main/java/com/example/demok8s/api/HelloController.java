@@ -9,16 +9,6 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
-    /*
-    @GetMapping("/api/hello")
-    public Map<String, String> hello() {
-        return Map.of(
-                "message", "Hello from Spring Boot on Kubernetes",
-                "status", "OK"
-        );
-    }
-     */
-
     @Value("${APP_MESSAGE:Hello from default value}")
     private String appMessage;
 
